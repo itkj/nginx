@@ -28,6 +28,7 @@ RUN useradd -s /sbin/nologin -d /usr/local/nginx -M nginx && \
                 --with-http_realip_module \
                 --with-http_v2_module \
                 --with-http_ssl_module \
+		--with-http_stub_status_module \
                 --with-ld-opt="-Wl,-rpath,/usr/local/lib" \
                 --add-module=/usr/local/src/ngx_devel_kit \
                 --add-module=/usr/local/src/lua-nginx-module && \
